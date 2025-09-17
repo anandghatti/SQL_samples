@@ -64,31 +64,4 @@ SELECT * FROM student AS a RIGHT JOIN course AS b ON a.student_id = b.course_id 
 
 /* ---------------- SELF JOIN EXAMPLE ---------------- */
 
-/* Create employee table */
-CREATE TABLE employee (
- id INT PRIMARY KEY,
- name VARCHAR(20),
- manager_id INT
-);
 
-/* Insert values into employee */
-INSERT INTO employee VALUES (101, "BORUTO", 103);
-INSERT INTO employee VALUES (102, "SHIKADAI", 104);
-INSERT INTO employee VALUES (103, "NARUTO", NULL);
-INSERT INTO employee VALUES (104, "SHIKAMARU", 103);
-
-/* Display employee table */
-SELECT * FROM employee;
-
-/* SELF JOIN: to get manager-employee pairs */
-SELECT a.name AS manager_name, b.name AS employee_name FROM employee AS a JOIN employee AS b ON a.id = b.manager_id;
-
-/* UNION example (removes duplicates) */
-SELECT name FROM employee
-UNION
-SELECT name FROM employee;
-
-/* UNION ALL example (keeps duplicates) */
-SELECT name FROM employee
-UNION ALL
-SELECT name FROM employee;
