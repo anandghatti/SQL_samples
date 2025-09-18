@@ -17,7 +17,7 @@ The goal of this repository is to serve as a **comprehensive reference hub** for
 - ✅ **Group By & Aggregations** – COUNT, AVG, MIN, MAX, HAVING, etc.  
 - ✅ **Triggers** – Automating tasks such as auto-filling appointment records  
 - ✅ **Views** – Creating reusable queries for reports  
-- ✅ **Sample Datasets** – Student, Course, Employee, Hospital Administration examples  
+- ✅ **Sample Datasets** – Student, Course, Employee, Hospital Administration, Bank Administration examples  
 
 ---
 
